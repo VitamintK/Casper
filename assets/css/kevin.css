@@ -15,7 +15,7 @@
     transform: translateX(-50%);
 }
 .post-content .multiimg img {
-    /*display: block;*/
+    display: inline;
     max-width: 126%;
     height: auto;
     padding: 0 0;
@@ -23,9 +23,10 @@
        center of its container and (2) shifting the entire image
        in the opposite direction by half its own width.
        Works for images that are larger than their containers. */
-    position: relative;
+    position: static;
     /*left: 50%;*/
     -webkit-transform: none; /* for Safari and iOS */
     -ms-transform: none; /* for IE9 */
     transform: none;
+    border:2px solid gray;
 }
